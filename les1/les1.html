@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="soner">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+			
+			
+			
+			function optellen(getal1,getal2) 
+			{
+			  return getal1 + getal2;			 
+			}
+			document.write("som optellen: " + optellen(10,5) + "<br>");
+			
+			
+			function aftrekken (getal1 ,getal2) 
+			{
+			  return getal1 - getal2;
+			   
+			}
+			document.write("som aftrekken: " + aftrekken(10,5) + "<br>");
+			
+			function maal (getal1,getal2) 
+			{
+			 	return  getal1 * getal2;
+			 	
+			}
+			document.write("som maal: " + maal(10,5) + "<br>");
+			
+			function delendoor(getal1,getal2) 
+			{
+			 	return  getal1 / getal2;
+			 	
+			} 
+			document.write("som delendoor: " + delendoor(10,5) + "<br>");
+			
+			
+			
+			
+			
+			function rekenmachine () 
+			{
+			 	this.getal1 = 0;
+			 	this.getal2 = 0;
+			 	
+			 	this.optellen = function() 
+			 	{
+				    return this.getal1 + this.getal2;
+				} 
+			}
+			var berekening = new rekemachine();
+			berekening.getal1 = 10;
+			berekening.getal2 = 20;
+			document.write("Som is: " + bereking.optellen());
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

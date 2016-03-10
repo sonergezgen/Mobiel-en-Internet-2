@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Les 4 - Jquery</title>
+        <meta name="description" content="">
+       <script src="http://code.jquery.com/jquery-1.12.0.min.js"> </script>
+        
+    </head>
+    
+    <body>
+        <h1> Les 4 - Jquery </h1>
+        
+        <script type="text/javascript">            
+            $(document).ready(function(){  
+                
+                $("#ul").append('<li> Brussel </li>');
+                $("#ul").append('<li> Gent </li>');
+                $("#ul").append('<li> Mechelen </li>');
+                $("#ul").append('<li> Genk </li>');
+                $("#ul").append('<li> Leuven </li>');
+                
+                var aantal = $("li").length();
+                $("body").append("Aantal Plaatsen : " + aantal);
+
+            $("#b1").click(function() {                
+                var textwaarde =  $("#t1").val();
+                $("#ul").prepend('<li>' + textwaarde +  '</li>');
+            
+            });       
+                
+                $("#b2").click(function() {
+                    $("#ul li").remove();
+                    
+                });
+                
+            });
+        </script>
+        
+        <ul id="ul">
+          <li> </li>
+        </ul>
+        
+        <button id="b1"> Voer een Andere plaats toe  </button>
+       <button id="b2"> Werwijder </button>
+        
+        <input type="text" id="t1"/>
+        
+        
+    </body>
+</html>

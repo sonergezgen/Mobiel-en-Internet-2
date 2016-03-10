@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>schaakbord</title>
+		<meta name="description" content="">
+		<meta name="author" content="soner">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<style type="text/css">
+            
+			.zwart1 {width: 3em; height: 3em; color: black; background-color: black; }
+			.geel2 {width: 3em; height: 3em; color: yellow; background-color: yellow; }
+			
+		</style>
+	</head>
+
+	<body>
+		<div>
+			
+			<!--<object class="zwart"> </object>
+			<object class="geel"> </object> -->
+			
+			<!--<div class="zwart">"       "</div>
+			<span class="geel">"        "</span> -->
+			
+			
+		<script type="text/javascript">
+			"use strict";
+			var i = 0, kleur = 0;
+                
+			
+			for (i = 0; i <= 8; i++; ) {
+				
+				if (kleur === 0) {
+				
+				while ( i < 8) {
+			 document.write('<object class="zwart1"> </object>');
+			 i++;
+			 document.write('<object class="geel2"> </object>');
+			 i++;
+			 };
+			 kleur =1;
+			 document.write('<br>')
+			};
+			
+			else if (kleur ===1 ) {
+				
+				var m=0;
+					while ( m < 8) {
+						
+			 		document.write('<object class="zwart1"> </object>');
+			 		m++
+			 		document.write('<object class="geel2"> </object>');
+					m++;
+			 
+			};
+			document.write('<br>')
+			kleur=0;
+				
+			};
+			
+			
+		
+			 
+			 		
+			 
+			
+			
+			};
+			
+			 
+			 
+		/*	function kiesRij(
+				{var i=0;
+				while ( i < 8) 
+			 document.write('<object class="zwart1"> </object>');
+			 i++
+			 document.write('<object class="geel2"> </object>');
+			 i++;
+			 kleur =1 ;
+			 ){
+				
+			};*/ 
+			
+			
+			
+		</script>
+		
+		
+		
+			<footer>
+				<p>
+					&copy; Copyright  by soner
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
